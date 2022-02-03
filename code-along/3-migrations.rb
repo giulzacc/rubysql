@@ -25,3 +25,11 @@ Salesperson.destroy_all
 # check the schema to confirm the change
 
 # 5. insert new rows in the table
+
+salesperson = Salesperson.new
+salesperson.first_name = "Kasa"
+salesperson.last_name = "Sam"
+salesperson.email = "ks@gmail.com"
+salesperson.save
+
+puts Salesperson.all.count
